@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geometry-genius</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+<!-- Header start --> <header class="py-8 px-8 rounded">
+    <section class=" bg-sky-100 flex ">
+<div class=" py-8 px-12 ">
+    <h1 class="text-4xl font-bold">Interactive</h1>
+    <h2 class="text-xl font-semibold text-gray-500">Geometry Genius</h2>
+</div>
+    <div class="pt-12 ml-auto pr-8">
+<button onclick="window.location.href='WEBSITES-NO-2/Click-The-Web.html'" class=" bg-sky-500 text-white py-2 px-12 font-semibold text-2xl rounded-md  hover:bg-blue-900 ">Blog</button>
+</div>
+    </section>
+</header>
+<!-- Header end-->
+
+<!-- Main start -->
+    <main> 
+       <div class="grid lg:grid-cols-4 gap-3 py-3 md: flex-wrap pl-3 ">
+<!-- sec1 -->
+<section class="lg:pl-6">
+  <div id="card1-colors" class="max-w-sm rounded overflow-hidden border-2 border-gray-200 all-color">
+      <img class="w-full  px-12 py-8" src="images/triangle.png" alt="">
+      <div class="px-6 py-4">
+        <div class="font-bold text-3xl mb-2 pl-16">Triangle</div>
+
+        <div class="flex gap-1">
+          <h2 class="text-gray-700 text-xl py-1.5">Area (A) = 0.5 x b x h</h2>
+          <button id="clear-btn-1" class="py-2.5 text-2xl pr-1"><i class="fa-regular fa-trash-can"></i></button>
+          <button onclick="setInputValue1()" id="add" class="py-2.5 text-2xl"><i class="fa-solid fa-pen-to-square"></i></button>
+          </div>
+        
+        <!-- form type  -->
+        <section class="flex gap-3">
+          <input id="t-calculate-cm-1" class="w-1/3 bg-gray-200 text-center"  type="text" name="" placeholder="a = 3"><h2 class="text-xl">cm</h2>
+          <input id="t-calculate-cm-2" class="w-1/3 bg-gray-200 text-center" type="text" name="" placeholder="b = 4"><h2 class="text-xl">cm</h2>
+         </section>
+              <div class="py-6 pr-8">
+<button id="triangleCalculateBtn" class=" bg-sky-500 text-white py-1 px-24 font-semibold text-xl rounded-md">Calculate</button>              
+</div>
+      </div>
+    </div>
+</section>
+
+<!-- Sec-2 --> <section>
+    <div id="card2-colors" class="max-w-sm rounded overflow-hidden border-2 border-gray-200 all-color">
+        <img class="w-full  px-12 py-8" src="images/rectangle.png" alt="">
+        <div class="px-6 py-4">
+          <div class="font-bold text-3xl mb-2 pl-16">Rectangle</div>
+
+          <div class="flex gap-3">
+            <h2 class="text-gray-700 text-xl py-1.5 pl-12">Area (A) = w x l</h2>
+            <button id="clear-btn-2" class="py-2.5 text-2xl pr-1"><i class="fa-regular fa-trash-can"></i></button>
+            <button onclick="setInputValue2()" id="addd" class="py-2.5 text-2xl"><i class="fa-solid fa-pen-to-square"></i></button>
+            </div>
+          
+          <!-- form type  -->
+          <section class="flex gap-3">
+            <input id="r-calculate-cm-1" class="w-1/3 bg-gray-200 text-center"  type="text" name="" placeholder="W = 7"><h2 class="text-xl">cm</h2>
+            <input id="r-calculate-cm-2" class="w-1/3 bg-gray-200 text-center" type="text" name="" placeholder="l = 5"><h2 class="text-xl">cm</h2>
+           </section>
+                <div class="py-6 pr-8">
+<button id="rectangleCalculateBtn" class=" bg-sky-500 text-white py-1 px-24 font-semibold text-xl rounded-md">Calculate</button>              
+</div>
+        </div>
+      </div>
+</section>
+
+<!-- Sec-3 --> <section class="">
+    <div id="card3-colors" class="max-w-sm rounded overflow-hidden border-2 border-gray-200">
+        <img class="w-full px-12 py-8" src="images/parallelogram.png" alt="">
+        <div class="px-6 py-4">
+          <div class="font-bold text-3xl mb-2 pl-8">Parallelogram</div>
+         
+          <div class="flex gap-3">
+            <h2 class="text-gray-700 text-xl py-1.5 pl-8">  Area (A) = b x h <br>
+            b=10cm, h=12cm </h2>
+            <button id="clear-btn-3" class="py-2.5 text-2xl pr-1"><i class="fa-regular fa-trash-can"></i></button>
+            <button onclick="setInputValue3()" id="add" class="py-2.5 text-2xl"><i class="fa-solid fa-pen-to-square"></i></button>
+            </div> 
+          
+          <!-- form type  -->
+          <section class="flex gap-3">
+            <input id="p-calculate-cm-1" class="w-1/3 bg-gray-200 text-center"  type="text" name="" placeholder="b = 10"><h2 class="text-xl">cm</h2>
+            <input id="p-calculate-cm-2" class="w-1/3 bg-gray-200 text-center" type="text" name="" placeholder="h = 12cm"><h2 class="text-xl">cm</h2>
+           </section>
+                <div class="py-6 ">
+<button id="parallelogramCalculateBtn" class=" bg-sky-500 text-white py-1 px-24 font-semibold text-xl rounded-md">Calculate</button>              
+</div>
+        </div>
+      </div>
+</section>
+<!-- Sec-4 --> <section class="bg-gray-100 border-2 border-gray-200...w-auto md: text-center">
+ <h2 class="text-2xl font-bold py-6 px-16 underline">Area Calculation</h2>
+ <div class="flex">
+ <div class=" pb-3"> 
+  <div class=" text-xl font-normal">
+    <h3 class="pb-1.5">  1. Triangle            </h3>
+    <h3 class="pb-1.5">  2. Rectangle           </h3>  
+    <h3 class="pb-1.5 pr-1">  3. Parallelogram       </h3>  
+    <h3 class="pb-1.5">  4. Rhombus             </h3>  
+    <h3 class="pb-1.5">  5. pentagon            </h3>  
+    <h3 class="pb-1.5">  6. Ellipse             </h3>  
+  </div>
+ </div>
+ <div>
+  <div class=" text-lg font-semibold"> 
+  <h3 class="pb-1.5 pr-3"><span id = "t-calculate-total">0</span>cm2</h3>
+  <h3 class="pb-1.5"><span id="r-calculate-total">0</span>cm2</h3>
+  <h3 class="pb-1.5 pr-3"><span id="p-calculate-total">0</span>cm2</h3>
+  <h3 class="pb-1.5"><span id="rhom-calculate-total">0</span>cm2</h3>
+  <h3 class="pb-1.5 pr-3"><span id="pen-calculate-total">0</span>cm2</h3>
+  <h3 class="pb-1.5"><span id="e-calculate-total">0</span>cm2</h3>
+  </div>
+ </div>
+
+ <div class=" gap-1.5">
+  <div class="pb-1.5"> <button id="convert-btn1" type="button" class="bg-sky-500 py-0.5 text-white rounded">convert m2</button></div>
+  <div class="pb-1.5"> <button id="convert-btn2" type="button" class="bg-sky-500 py-0.5 text-white rounded">convert m2</button></div>
+  <div class="pb-1.5"> <button id="convert-btn3" type="button" class="bg-sky-500 py-0.5 text-white rounded">convert m2</button></div>
+  <div class="pb-1.5"> <button id="convert-btn4" type="button" class="bg-sky-500 py-0.5 text-white rounded">convert m2</button></div>
+  <div class="pb-1.5"> <button id="convert-btn5" type="button" class="bg-sky-500 py-0.5 text-white rounded">convert m2</button></div>
+  <div class="pb-1.5"> <button id="convert-btn6" type="button" class="bg-sky-500 py-0.5 text-white rounded">convert m2</button></div>
+ </div>
+ </div>
+</section>
+</div>
+<!-- **************************************** -->
+   <!-- part-2 --> <div class="grid lg:grid-cols-4 gap-3 py-6 md:flex-wrap px-3 ">
+<!-- Sec-5 --> <section class="lg:pl-6">
+  <div id="card4-colors" class="rounded overflow-hidden border-2 border-gray-200">
+    <img class="w-full px-12 py-8" src="images/rhombus.png" alt="">
+    <div class="px-3 py-4">
+      <div class="font-bold text-3xl mb-2 pl-12">Rhombus</div>
+      <div class="flex gap-1">
+        <h2 class="text-gray-700 text-xl py-1.5 px-1"> Area (A) =0.5 x d1 x d2 <br>
+          <span class="px-8"> d1 = 16 , d2 = 8</span> </h2>
+        <button id="clear-btn-4" class="py-2.5 text-2xl pr-1"><i class="fa-regular fa-trash-can"></i></button>
+        <button onclick="setInputValue4()" id="add" class="py-2.5 text-2xl"><i class="fa-solid fa-pen-to-square"></i></button>
+        </div> 
+      <!-- form type  -->
+      <section class="flex gap-3">
+        <input class="w-1/3 bg-gray-200 text-center"  type="text" name="" id="rhom-calculate-cm-1" placeholder="d1 = 16"><h2 class="text-xl">cm</h2>
+        <input class="w-1/3 bg-gray-200 text-center" type="text" name="" id="rhom-calculate-cm-2" placeholder="d2 = 8"><h2 class="text-xl">cm</h2>
+       </section>
+            <div class="py-6">
+<button id="rhombusCalculateBtn" class=" bg-sky-500 text-white py-1 px-24 font-semibold text-xl rounded-md">Calculate</button>              
+</div>
+    </div>
+  </div>
+</section>
+
+<!-- Sec-6 --> <section class="">
+<div id="card5-colors" class="rounded overflow-hidden border-2 border-gray-200">
+    <img class="w-full  px-12 py-8" src="images/pentagon.png" alt="">
+    <div class="px-6 py-4">
+      <div class="font-bold text-3xl mb-2 pl-16">pentagon</div>
+
+      <div class="flex gap-1">
+        <h2 class="text-gray-700 text-xl py-1.5">  <span class="px-1">Area (A) =0.5 x p x b </span><br>
+        <span class="px-3">p = 6cm, b = 10cm</span> </h2>
+        <button id="clear-btn-5" class="py-2.5 text-2xl pr-1"><i class="fa-regular fa-trash-can"></i></button>
+        <button onclick="setInputValue5()" id="add" class="py-2.5 text-2xl"><i class="fa-solid fa-pen-to-square"></i></button>
+        </div> 
+      <!-- form type  -->
+      <section class="flex gap-3">
+        <input class="w-1/3 bg-gray-200 text-center"  type="text" name="" id="pen-calculate-cm-1" placeholder="p = 6cm"><h2 class="text-xl">cm</h2>
+        <input class="w-1/3 bg-gray-200 text-center" type="text" name="" id="pen-calculate-cm-2" placeholder="b = 10cm"><h2 class="text-xl">cm</h2>
+       </section>
+            <div class="py-6 pr-8">
+<button id="pentagonCalculateBtn" class=" bg-sky-500 text-white py-1 px-24 font-semibold text-xl rounded-md">Calculate</button>              
+</div>
+    </div>
+  </div>
+</section>
+
+<!-- Sec-7 --> <section class="">
+<div id="card6-colors" class="rounded overflow-hidden border-2 border-gray-200">
+    <img class="w-full px-12 py-8" src="images/ellipse.png" alt="">
+    <div class="px-6 py-4">
+      <div class="font-bold text-3xl mb-2 pl-20">Ellipse</div>
+      <div class="flex gap-3">
+        <h2 class="text-gray-700 text-xl py-1.5"> <span class="px-16">Area (A) = ab</span> <br>
+          <span class="pl-6">a = 10cm, b = 4cm</span>
+        <button id="clear-btn-6" class="py-2.5 text-2xl pr-1"><i class="fa-regular fa-trash-can"></i></button>
+        <button onclick="setInputValue6()" id="add" class="py-2.5 text-2xl"><i class="fa-solid fa-pen-to-square"></i></button>
+        </div> 
+      <!-- form type  -->
+      <section class="flex gap-3">
+        <input class="w-1/3 bg-gray-200 text-center"  type="text" name="" id="e-calculate-cm-1" placeholder="a = 10cm"><h2 class="text-xl">cm</h2>
+        <input class="w-1/3 bg-gray-200 text-center" type="text" name="" id="e-calculate-cm-2" placeholder="b = 4cm"><h2 class="text-xl">cm</h2>
+       </section>
+            <div class="py-6 ">
+<button id="ellipseCalculateBtn" class=" bg-sky-500 text-white py-1 px-24 font-semibold text-xl rounded-md">Calculate</button>              
+</div>
+    </div>
+  </div>
+</section>
+</div>
+    </main>
+<!-- Main end -->
+ <script src="JS/Geometry-genius.js"></script>
+ 
+</body>
+</html>
